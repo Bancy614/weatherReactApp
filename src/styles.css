@@ -1,9 +1,13 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(252, 115, 156) 0%, rgb(102, 112, 241) 93%);
+  background: linear-gradient(
+    90deg,
+    rgb(115, 154, 252) 0%,
+    rgb(139, 102, 241) 100%
+  );
 }
-h1{
+h1 {
   color: blue;
 }
 ul {
@@ -16,4 +20,7 @@ li {
 }
 SearchEngine {
   text-align: center;
+}
+small {
+  opacity: 0.7;
 }
