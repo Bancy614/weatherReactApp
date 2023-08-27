@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./styles.css";
 import { Oval } from "react-loader-spinner";
+import bootstrap from "bootstrap";
 
 export default function SearchEngine() {
   function handleSubmit(event) {
