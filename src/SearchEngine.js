@@ -41,8 +41,10 @@ export default function SearchEngine() {
           onChange={changeCity}
           placeholder="Type a city"
           required
+          autoFocus={true}
+          autocomplete={false}
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="Search" className="btn btn-primary" />
       </form>
       {submitted && (
         <div>
