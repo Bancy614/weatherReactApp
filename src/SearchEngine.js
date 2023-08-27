@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./styles.css";
+import {Oval} from 'react-loader-spinner'
 
 export default function SearchEngine() {
   function handleSubmit(event) {
@@ -68,6 +69,19 @@ export default function SearchEngine() {
           </ul>
         </div>
       )}
+      <Oval
+        height={50}
+        width={50}
+        color="blueviolet"
+        wrapperStyle={{}}
+        wrapperClass=""
+        visible={true}
+        ariaLabel='oval-loading'
+        secondaryColor="#4fa94d"
+        strokeWidth={2}
+        strokeWidthSecondary={2}
+
+/>
     </div>
   );
 }
