@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./styles.css";
 import { Oval } from "react-loader-spinner";
+import bootstrap from "bootstrap";
 
 export default function SearchEngine() {
   function handleSubmit(event) {
@@ -41,8 +42,10 @@ export default function SearchEngine() {
           onChange={changeCity}
           placeholder="Type a city"
           required
+          autoFocus={true}
+          autocomplete={false}
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="Search" className="btn btn-primary" />
       </form>
       {submitted && (
         <div>
